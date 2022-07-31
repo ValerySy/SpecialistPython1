@@ -20,9 +20,16 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+x = int(input())
+y = int(input())
+xr = int(input())
+yr = int(input())
+r = int(input())
+
+if xr - r <= x <= xr + r and yr - r <= y <= yr + r:
+    print('Yes')
+else:
+    print('No')
 
 ---
 
