@@ -14,9 +14,14 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+triangle1 = int(input())
+triangle2 = int(input())
+triangle3 = int(input())
+if triangle1+triangle2>triangle3 and triangle1+triangle3>triangle2 and triangle3+triangle2>triangle1:
+    print ('Exists')
+else:
+    print('Not Exists')
+
 
 ---
 
