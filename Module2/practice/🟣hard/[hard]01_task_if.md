@@ -17,8 +17,12 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+number_value = int(input())
+
+if number_value//1000 == number_value%10 and (number_value//100)%10 == (number_value%100)//10:
+    print ('Да')
+else:
+    print('Нет')
+
 
 ---
