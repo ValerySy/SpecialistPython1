@@ -14,9 +14,17 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+monthNo = int(input())
+if 1 <= monthNo <= 2 or monthNo == 12:
+    print('Winter')
+elif 3 <= monthNo <= 5:
+    print('Spring')
+elif 6 <= monthNo <= 8:
+    print('Summer')
+elif 9 <= monthNo <= 11:
+    print('Autmn')
+else:
+    print ('Month not found')
 
 ---
 
