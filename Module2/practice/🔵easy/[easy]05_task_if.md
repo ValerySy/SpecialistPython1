@@ -15,9 +15,19 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+triangle1 = int(input())
+triangle2 = int(input())
+triangle3 = int(input())
+
+if triangle1 + triangle3 > triangle2 and triangle1 + triangle2 > triangle3 and triangle3 + triangle2 > triangle1:
+
+    if triangle1 == triangle2 or triangle1 == triangle3 or triangle3 == triangle2:
+        print('равнобедренный')
+    else:
+        print('неравнобедренный')
+
+else:
+    print('не существует')
 
 ---
 
