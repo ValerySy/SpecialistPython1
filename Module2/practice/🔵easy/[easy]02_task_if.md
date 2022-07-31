@@ -17,9 +17,13 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+cash = int(input())
+price = int(input())
+if cash-price>0:
+    print ('Сдача ' + str(cash - price) + ' рублей')
+else:
+    print('Недостаточно средств')
+
 
 ---
 
