@@ -49,10 +49,21 @@ while ...:  # внешний цикл
 <summary>Подсказка-2</summary>
 Чтобы выводить значение print'ами на одной строке, используйте:
 
-```python
-print(1, end=" ")
-print(2, end=" ")
-print(3, end=" ")
-...
-```
+n = int(input("n: "))
+i = 1
+
+while i <= n:
+    j = 1
+    while j <= n:
+        if j < n:
+            if i * j // 10 > 0: # Думаю можно выровнять иначе, но не нашла как
+                print(i * j, end=' ')
+            else:
+                print(i * j, end='  ')
+        else:
+            print(i * j)
+        j += 1
+    i += 1
+
+
 </details>
