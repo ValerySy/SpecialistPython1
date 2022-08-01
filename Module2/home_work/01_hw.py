@@ -5,4 +5,21 @@
 # Формат выходных данных
 # Выведите «YES», если можно отломить от шоколадки ровно k долек, и «NO» иначе.
 
-# TODO: your code here
+n = int(input('Input n:'))
+m = int(input('Input m:'))
+k = int(input('Input k:'))
+
+x = 1
+yCount = 0
+
+while x * k <= n or x * k <= m:
+    if n * x == k or m * x == k:
+        yCount+= 1
+    x+= 1
+if yCount > 0:
+    print('Yes')
+else: 
+    if k == n * m:
+        print('Ohhh! Take a whole chocko sweet tooth :)')
+    else:    
+        print('No')    
