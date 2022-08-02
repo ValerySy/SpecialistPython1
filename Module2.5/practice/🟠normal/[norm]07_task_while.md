@@ -15,9 +15,25 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+a = int(input('a: '))
+b = int(input('b: '))
+
+perfect_num_count = 0
+dividers_sum = 0
+
+i = a
+
+while i <= b:
+    j = 1
+    while j < i:
+        if i % j == 0:
+            dividers_sum += j
+        j += 1
+    if dividers_sum == j:
+        print(j, end=' ')
+        perfect_num_count += 1
+    i += 1
+print(perfect_num_count)    
 
 ---
 
