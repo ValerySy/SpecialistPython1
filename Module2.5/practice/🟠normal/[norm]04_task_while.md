@@ -21,9 +21,17 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = input('n: ')
+res_string = ''
+i = 1
+j = 1
+while i <= int(n):
+    while j <= int(n):
+        res_string += str(j)
+        print (res_string)   
+        j += 1
+    i += 1 
+ 
 
 ---
 
