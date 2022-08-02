@@ -32,9 +32,12 @@ n = 5
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input("n: "))
+
+a = 1
+while a <= n:
+    print('*' * a)
+    a += 1    
 
 ---
 
