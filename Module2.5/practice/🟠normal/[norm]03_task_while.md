@@ -19,9 +19,12 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input('n: '))
+a = 0
+while n >= 1:
+    a += n ** 2
+    n -= 1 
+print (a)    
 
 ---
 
