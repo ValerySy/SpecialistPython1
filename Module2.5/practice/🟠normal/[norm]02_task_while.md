@@ -15,10 +15,17 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+needed_value = "stop"
 
+input_value = ""
+positives_count = 0
+
+while needed_value != str(input_value):
+    input_value = input("value: ")
+    if needed_value != str(input_value):
+        if int(input_value) > 0:
+            positives_count += 1
+print(positives_count)    
 ---
 
 ### Подсказки
