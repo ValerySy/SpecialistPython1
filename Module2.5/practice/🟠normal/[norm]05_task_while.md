@@ -15,9 +15,19 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input('n: '))
+
+i = 2
+dividers_count = 0
+
+while i < n:
+    if n % i == 0:
+        print(i)
+        dividers_count += 1
+    i += 1 
+ 
+if dividers_count == 0:
+    print('The number is prime')
 
 ---
 
