@@ -16,9 +16,15 @@
 
 ### Решение задачи
 
-```python
-# TODO: you code here...
-```
+n = int(input('numbers to check: '))
+i = 1
+positives_count = 0
+while i <= n:
+    k = int(input('input ' + str(i) + ' of ' + str(n) + ' number: '))
+    if k > 0:
+        positives_count += 1
+    i += 1
+print(str(positives_count) + ' numbers are positive')
 
 ---
 
