@@ -17,7 +17,16 @@
 ### Решение задачи
 
 ```python
-# TODO: you code here...
+text = input ('input text: ')
+
+print(text[:2])
+print(text[2:])
+print(type(int(text[2:])))
+if text[:2] == 'id' and type(int(text[2:])) == int:
+    print('Yes')
+else:
+    print('No')
+
 ```
 
 ---
