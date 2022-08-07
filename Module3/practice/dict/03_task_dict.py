@@ -29,7 +29,13 @@ staff = [
 # Вычислите:
 print("Имя и Фамилию сотрудника с самой высокой зарплатой:")
 
-# TODO: your code here
+max = 0
+index = 0
+for i in range(len(staff)):
+    if staff[i]['salary'] > max:
+        max = staff[i]['salary']
+        index = i
+print(staff[index]['name'])
 
 print("Имя и Фамилию сотрудника с самой низкой зарплатой:")
 
