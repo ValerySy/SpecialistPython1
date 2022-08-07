@@ -17,9 +17,12 @@
 ### Решение задачи
 
 ```python
+
 name = input("Имя: ")
 surname = input("Фамилия: ")
-# TODO: you code here...
+
+print(name.title(), surname.title())
+
 ```
 
 ---
