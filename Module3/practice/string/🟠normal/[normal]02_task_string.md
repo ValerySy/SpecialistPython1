@@ -17,6 +17,7 @@
 ### Решение задачи
 
 ```python
+#Решить через сплит
 text = input ('input text: ')
 
 print(text[:3])
