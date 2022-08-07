@@ -19,13 +19,14 @@
 ```python
 text = input ('input text: ')
 
-print(text[:2])
-print(text[2:])
+print(text[:3])
+print(text[3:])
 print(type(int(text[2:])))
-if text[:2] == 'id' and type(int(text[2:])) == int:
+if text[:3] == 'id:' and type(int(text[3:])) == int:
     print('Yes')
 else:
     print('No')
+
 
 ```
 
