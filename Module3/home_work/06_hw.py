@@ -34,12 +34,18 @@ items = [
 # Найдите:
 print("Товары на складе представлены брэндами: ")
 
-# TODO: your code here
+new_items = []
+for el in items:
+    new_items.append(el['brand'])
+print(*set(new_items), sep = ', ')
+
 
 print("На складе больше всего товаров брэнда(ов): ")
 
 # TODO: your code here
 
 print("На складе самый дорогой товар брэнда(ов): ")
+
+
 
 # TODO: your code here
