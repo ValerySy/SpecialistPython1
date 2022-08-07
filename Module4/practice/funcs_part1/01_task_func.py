@@ -2,8 +2,14 @@
 
 def max4(n1, n2, n3, n4):
     # TODO: your code here
-    pass
-
+    max_ = n1
+    if n2 > max_:
+        max_ = n2
+    if n3 > max_:
+        max_ = n3
+    if n4 > max_:
+        max_ = n4
+    return max_
 
 # Тестируем функцию
 print(max4(5, 6, 12, 7))
