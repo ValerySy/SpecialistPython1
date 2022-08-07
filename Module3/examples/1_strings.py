@@ -91,3 +91,87 @@ print("'python'.upper() -->", 'python'.upper())
 print("'трололошка'.find('ло') -->", 'трололошка'.find('ло', 4))  # индекс искомой подстроки (первое вхождение)
 
 # + Подробнее о методах читайте в справочнике по python
+
+----------------------------string
+bird = 'ВЫХУХОЛЬ' #str
+print(bird[1])
+print(bird[-1]) #last symbol
+#slices
+print(bird[2:4])
+print(bird[-5:-3])
+print(bird[-3:]) #right 3
+print(bird[:3]) #left 3
+
+print(bird[0:8:2]) #each 2 symbol
+#bird[from(included):to(excluded):step]
+
+print(len(bird))
+print(bird.count('Х'))
+print(bird.replace('Х','Д'))
+
+print(bird.find('Х')) # index of 1st symbol
+print(bird.rfind('Х')) # index of 1st symbol from right
+
+print(bird.lower()) #
+if bird.startswith('В'):
+    print(bird)
+
+result = 10
+print (f'Result = {result} cows')
+print ('Result = {} cows'.format(result))
+
+---------------------list
+marks = [3, 4, 4, 5, 4]
+
+fruits = ['banana', 'kiwi', 'pea', 'apple', 'mango']
+
+print(marks[1])
+
+print(fruits) #с квадратными скобками
+print(*fruits)
+print(fruits[0]) #banaba
+print(fruits[0][1]) #a
+
+
+fruits = [1, 2, 3]
+fruits.append(6)
+print(fruits)
+
+x = [1, 2, 3]
+y = [1, 5]
+print(x + y)
+print(x * 3)
+
+x[0] = 5
+print(x * 3)
+
+---------------dict
+
+
+phonebook = {} #dict
+phonebook['Boris'] = [89686674122, 89668546345]
+phonebook['Valeriya'] = 89668546345
+
+
+useful_things = {}
+useful_things['map'] = 123
+
+
+
+print(*phonebook['Boris'])
+print(phonebook)
+
+for key, value in phonebook.items():
+    print(key, value)
+    #dict
+	
+	
+	
+	---------------------
+	x = [1, 2, 2, 2, 6, 6, 8]
+print(x)
+
+#set (unique values) changeble
+x1 = list(set(x))
+print(x1)
+
