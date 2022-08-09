@@ -20,13 +20,13 @@
 
 ### Решение задачи
 
-x = int(input())
-y = int(input())
-xr = int(input())
-yr = int(input())
-r = int(input())
+x = int(input('x: '))
+y = int(input('y: '))
+xr = int(input('xr: '))
+yr = int(input('yr: '))
+r = int(input('r: '))
 
-if xr - r <= x <= xr + r and yr - r <= y <= yr + r:
+if (xr - x) ** 2 + (yr - y) ** 2 <= r ** 2:
     print('Yes')
 else:
     print('No')
