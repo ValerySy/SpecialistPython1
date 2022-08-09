@@ -37,15 +37,33 @@ print("Товары на складе представлены брэндами:
 new_items = []
 for el in items:
     new_items.append(el['brand'])
-print(*set(new_items), sep = ', ')
 
+print(*set(new_items), sep = ', ')
+#---------------------------------
+print("На складе самый дорогой товар брэнда(ов): ")
+max_price = 0
+for item in items:
+    if item['price'] >= max_price:
+        max_price = item['price']
+new_items = []
+for item in items:
+    if item['price'] == max_price:
+        new_items.append(item['brand'])
+print(*set(new_items), sep = ', ')
+#---------------------------------
 
 print("На складе больше всего товаров брэнда(ов): ")
 
-# TODO: your code here
+new_items = []
+for el in items:
+    new_items.append(el['brand'])
+brands_unique_list = set(new_items)
+brands_assort_list = {brand : new_items.count(brand) for brand in brands_unique_list}
 
-print("На складе самый дорогой товар брэнда(ов): ")
-
-
-
-# TODO: your code here
+max_count = 0
+for brand, brand_assort in brands_assort_list.items():
+    if brand_assort > max_count:
+        max_count = brand_assort
+for brand, brand_assort in brands_assort_list.items():
+    if brand_assort == max_count:
+        print(brand)
