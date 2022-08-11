@@ -14,10 +14,14 @@
 
 ### Решение задачи
 
-```python
 text = "Lorem ipsum dolor sit amet consectetur adipiscing elit Integer porttitor bibendum nisi ut convallis ante"
-# TODO: you code here...
-```
+text1 = text.split(' ')
+words_count = 0
+for word in text1:
+    if len(word) > 5:
+        words_count += 1
+print(words_count)
+
 
 ---
 
