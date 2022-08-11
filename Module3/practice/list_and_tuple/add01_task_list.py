@@ -2,6 +2,6 @@
 # описываемой уравнением y=2x-4).
 # Получить и вывести на экран список координат y для данного уравнения прямой.
 x_list = [-2, -1, 0, 1, 2, 3, 4, 5, 6, 7]
-coordinates_list = {x: 2*x-4 for x in x_list}
-for x,y in coordinates_list.items():
+coordinates = {x: 2*x-4 for x in x_list}
+for x,y in coordinates.items():
     print('x: ', x, 'y: ', y)
