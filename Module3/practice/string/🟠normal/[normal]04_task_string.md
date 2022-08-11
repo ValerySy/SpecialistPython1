@@ -19,11 +19,12 @@
 Вывести "безопасный", если строка пароля соответствует требованиям безопасности или "не безопасный" в противоположном случае.
 
 ### Решение задачи
-
-```python
 password = input("Enter password: ")
-# TODO: you code here...
-```
+if '#' in password and len(password) >= 6 and password[0].isalpha():
+    print('Safety')
+else:
+    print('Unsafety')
+
 
 ---
 
