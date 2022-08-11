@@ -14,12 +14,15 @@
 
 ### Решение задачи
 
-```python
 text = "В теории, теория и практика неразделимы. На практике это не так."
+text1 = text.lower()
 vowels = "ауоыэяюёие"
 # TODO: you code here...
-```
-
+vowels_count = 0
+for sym in text1:
+    if sym in vowels:
+        vowels_count += 1
+print(vowels_count)
 ---
 
 ### Подсказки
