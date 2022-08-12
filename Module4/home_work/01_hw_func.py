@@ -3,9 +3,17 @@
 # Билет считается счастливым, если сумма его первых и последних цифр равны.
 
 def lucky_ticket(ticket_number):
-    # TODO: your code here
-    pass
-
+    first_sum = 0
+    second_sum = 0
+    for i in range(len(str(ticket_number))):
+        if i <=2:
+            first_sum += int(str(ticket_number)[i])
+        else:
+            second_sum += int(str(ticket_number)[i])
+    if first_sum == second_sum:
+        return True
+    else:
+        return False
 
 # Тестируем функцию
 print(lucky_ticket(123006))
