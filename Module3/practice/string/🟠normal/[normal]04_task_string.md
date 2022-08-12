@@ -20,10 +20,10 @@
 
 ### Решение задачи
 password = input("Enter password: ")
-if '#' in password and len(password) >= 6 and password[0].isalpha():
+if '#' in password and len(password) >= 6 and password[0].isalpha() and password[0].istitle():
     print('Safety')
-else:
-    print('Unsafety')
+else: print('Unsafety')
+
 
 
 ---
