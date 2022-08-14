@@ -26,6 +26,27 @@
 
 ### Решение задачи
 
+summa = 0
+min_list = []
+max_list = []
+with open('1.txt', 'r', encoding='UTF-8') as f:
+    for line in f:
+        max_price = 0
+        min_price = float(line.split(' ')[0].rstrip().lstrip())
+        for num in line.split(' '):
+            if num.rstrip().lstrip().isnumeric():
+                summa += float(num.rstrip().lstrip())
+                if float(num.rstrip().lstrip()) > max_price:
+                    max_price = float(num.rstrip().lstrip())
+                if float(num.rstrip().lstrip()) < min_price:
+                    min_price = float(num.rstrip().lstrip())
+        max_list.append(max_price)
+        min_list.append(min_price)
+
+print(summa, max_list, min_list)
+
+
+
 ```python
 # Совет: сначала считайте все цены из файла, сохраните в список,
 # преобразовав каждую цену к числу(цены в файле хранятся в виде строк)
