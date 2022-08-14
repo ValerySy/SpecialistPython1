@@ -36,6 +36,21 @@ if no_count > 0:
     print('Нельзя')
 else:
     print('Можно')
+    
+    
+    
+#---------------------------------------------------------------------------
+
+s1 = 'Мама мыла раму'
+s2 = 'Мама'
+data1 = set(s1)
+data2 = set(s2)
+result = data1.intersection(data2)
+#print(result)
+if data2 == result:
+    print('yes')
+else:
+    print('no')
 
 ---
 
