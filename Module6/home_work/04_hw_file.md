@@ -20,10 +20,12 @@
 Записать названия фруктов в разные файлы в соответствии с условием задачи.
 
 ### Решение задачи
+with open('data/fruits.txt', 'r', encoding= 'UTF-8') as f:
+    for line in f:
+        if line[0].isalpha():
+            with open(f'data/fruits_{line[0].upper()}.txt', 'a', encoding= 'UTF-8') as f:
+                f.write(line)
 
-```python
-# TODO: you code here...
-```
 
 ---
 
