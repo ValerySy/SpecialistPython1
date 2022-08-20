@@ -32,6 +32,15 @@ n = 6
 Программа ничего не выводит в терминал, все символы для отображения пирамиды выводим в файл.
 
 ### Решение задачи
+n = int(input("n: "))
+spaces_count = n
+stars_count = 1
+for line in range(n+1):
+    with open("data/pyramid.txt", "a") as f:
+        f.write(str(spaces_count * " " + stars_count * '*' + '\n'))
+    spaces_count -= 1
+    stars_count += 2
+
 
 ```python
 n = int(input("n: "))
