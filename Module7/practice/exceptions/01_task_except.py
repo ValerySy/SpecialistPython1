@@ -4,3 +4,12 @@
 # На вход программе подается строка формата nxm (x - латинская буква икс).
 # Пример входных данных: 12x6
 # Если данные вводятся в неверном формате, сообщить об этом и запросить ввод заново.
+is_vveli = False
+while not is_vveli:
+    nxm = input('Input nxm:')
+    try:
+        n, m = nxm.split('x')
+        is_vveli = True
+        print(int(n)//int(m))
+    except ValueError as err:
+        print('Введите данные заново')
