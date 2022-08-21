@@ -28,7 +28,19 @@ with open('data/fruits.txt', 'r', encoding= 'UTF-8') as f:
 
 
 ---
+result = {}
+for i in range(ord('А'), ord('Я') + 1):
+    result[chr(i)] = []
+with open('data/fruits.txt', 'r', encoding= 'UTF-8') as f:
+    for line in f:
+        if line[0].isalpha():
+            result[line[0].upper()].append(line)
 
+for key,value in result.items():
+    if len(value) != 0:
+        with open(f'data/fruits_{key}.txt', 'a', encoding= 'UTF-8') as r:
+            for el in value:
+                r.write(el)
 ### Подсказки
 
 <details>
