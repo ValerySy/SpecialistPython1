@@ -8,9 +8,9 @@
 
 from calendar import monthrange
 
-y = int(input('year: '))
-m = int(input('month: '))
+y = input('year: ')
+m = input('month: ')
 try:
-    print(monthrange(y, m)[1])
+    print(monthrange(int(y), int(m))[1])
 except BaseException as err:
     print(err)
