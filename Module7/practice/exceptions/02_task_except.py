@@ -4,3 +4,13 @@
 # Алгоритм проверки на високосный год оформите в виде отдельной функции.
 #
 # Входная строка содержит два целых числа – номер месяца (возможно, неправильный) и номер года.
+
+
+from calendar import monthrange
+
+y = int(input('year: '))
+m = int(input('month: '))
+try:
+    print(monthrange(y, m)[1])
+except BaseException as err:
+    print(err)
