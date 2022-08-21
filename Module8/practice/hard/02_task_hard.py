@@ -17,3 +17,14 @@
 
 # Дано целое число - номер комнаты
 # Вывести два целых числа — номер этажа и ее порядковый номер слева на этаже.
+
+nomer = int(input())
+fl_num = 1
+room_num = 0
+while room_num != nomer:
+    for i in range(fl_num):
+        room_num += 1
+        if room_num == nomer:
+            print(fl_num)
+        fl_num += 1
+
