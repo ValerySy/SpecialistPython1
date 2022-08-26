@@ -8,3 +8,14 @@
 # 4. Профессия
 # 5. Зарплата
 # Примечание: Данные сгенерированных сотрудников могут повторяться
+import random
+from russian_names import RussianNames
+
+empl_list = [[RussianNames(surname=False, patronymic=False).get_person(),
+             RussianNames(name=False, patronymic=False).get_person(),
+             random.randint(18,65),
+             random.choice(['Экономист', 'Аналитик', 'Маркетолог', 'Программист']),
+             random.randint(50000,200000)
+             ] for _ in range(100)]
+print(empl_list)
+
