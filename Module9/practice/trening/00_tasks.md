@@ -18,6 +18,8 @@
 
 Пропустить:		<font color="red">abcd1</font>
 
+print(re.findall(r'[a-z0-9\W]{4}[.]', test))
+
 #### Часть-2:
 Даны строки: **can man fan dan**
 
