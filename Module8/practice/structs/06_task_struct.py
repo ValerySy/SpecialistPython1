@@ -9,13 +9,22 @@
 # 5. Зарплата
 # Примечание: Данные сгенерированных сотрудников могут повторяться
 import random
-from russian_names import RussianNames
+names = ['Ivan','Semen','Egor','Anna','Elena','Irina','Vasiliy']
+surnames = ['Ivanov','Semenov','Egorov','Annin','Enin','Sergeev','Vasilev']
+professions = ['Builder','Manager','Layer','Programmer','Analyst']
+result = []
 
-empl_list = [[RussianNames(surname=False, patronymic=False).get_person(),
-             RussianNames(name=False, patronymic=False).get_person(),
-             random.randint(18,65),
-             random.choice(['Экономист', 'Аналитик', 'Маркетолог', 'Программист']),
-             random.randint(50000,200000)
-             ] for _ in range(100)]
-print(empl_list)
+for i in range(100):
+    current_worker = {'name': random.choice(names), 'surname': random.choice(surnames),
+                     'age': random.randint(18, 80), 'profession': random.choice(professions),
+                     'salary': random.randint(50000, 300000)}
+    result.append(current_worker)
 
+print(result)
+
+
+
+
+result = [{'name': random.choice(names), 'surname': random.choice(surnames),
+                 'age': random.randint(18, 80), 'profession': random.choice(professions),
+                 'salary': random.randint(50000, 300000)} for _ in range(100)]
