@@ -37,7 +37,7 @@ print(re.findall(r'[a-z0-9\W]{4}[.]', test))
 
 Пропустить		<font color="red">pan</font>
 
-print(re.findall(r'.{3}\s', test))
+print(re.findall(r'[cmf]\w\w', test))
 
 #### Часть-3:
 
