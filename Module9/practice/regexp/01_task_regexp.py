@@ -6,4 +6,8 @@
 # 4) все слова начинающиеся на согласную букву
 # 5) все уникальные(без дубликатов) знаки препинания
 
-text = ...
+print(re.findall(r'^\w+', test))
+print(re.findall(r'^\S{2}|\s\S{2}', test))
+print(re.findall(r'\b[aeiouyаеёиоуыэюя]\w+', test))
+print(re.findall(r'\b[^aeiouyаеёиоуыэюя]\w+', test))
+print(set(re.findall(r'\W(?!\S)', test)))
