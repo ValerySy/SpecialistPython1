@@ -52,3 +52,5 @@ print(re.findall(r'[cmf]\w\w', test))
 | In May 1969                   | May 1969          |1969
 | The war ended on 8 May 1945   | May 1945          |1945
 
+print(re.findall(r'[JFMASOND][a-z]{2}\s\d{4}|\d{4}', test))
+
